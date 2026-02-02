@@ -15,9 +15,13 @@ run/main_scene="uid://dewq3h0mes6jm"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://b507eu4kp121q"
+
 [display]
 
-window/size/mode=3
+window/size/mode=2
 
 [editor_plugins]
 
@@ -57,4 +61,4 @@ move_down={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.09107187, 0.13119674, 0.22644743, 1)
+environment/defaults/default_clear_color=Color(0.22246978, 0.29536584, 0.4756018, 1)

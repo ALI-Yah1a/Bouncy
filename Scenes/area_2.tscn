@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://b1oixbcgg1ok6"]
+[gd_scene format=3 uid="uid://bh3c7x44emaeh"]
 
 [ext_resource type="Texture2D" uid="uid://ntb0befljsre" path="res://Assets/Tileset/tiles_1.png" id="1_wp32v"]
 [ext_resource type="PackedScene" uid="uid://bb8lyneqjpy8x" path="res://Scenes/player.tscn" id="2_jklmv"]
 [ext_resource type="PackedScene" uid="uid://c32n164bi50ai" path="res://Scenes/platform.tscn" id="3_jklmv"]
-[ext_resource type="PackedScene" uid="uid://jyjghxr5kxxi" path="res://Scenes/gate.tscn" id="4_kgqqh"]
+[ext_resource type="PackedScene" uid="uid://jyjghxr5kxxi" path="res://Scenes/gate.tscn" id="4_pbtnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgqqh"]
 texture = ExtResource("1_wp32v")
@@ -419,6 +419,7 @@ position = Vector2(0, -7)
 [node name="Node" type="Node" parent="." unique_id=1526225595]
 
 [node name="platform" parent="Node" unique_id=973998977 instance=ExtResource("3_jklmv")]
+visible = false
 position = Vector2(752, -54)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/platform" unique_id=1284382483]
@@ -427,6 +428,7 @@ libraries/ = SubResource("AnimationLibrary_yajbp")
 autoplay = &"moving"
 
 [node name="platform2" parent="Node" unique_id=2054894806 instance=ExtResource("3_jklmv")]
+visible = false
 position = Vector2(737, -254)
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Node/platform2" unique_id=692824007]
@@ -434,5 +436,6 @@ root_node = NodePath("../../platform")
 libraries/ = SubResource("AnimationLibrary_xdrte")
 autoplay = &"moving"
 
-[node name="Gate" parent="." unique_id=1370895391 instance=ExtResource("4_kgqqh")]
-position = Vector2(1531, 27)
+[node name="Gate" parent="." unique_id=1370895391 instance=ExtResource("4_pbtnt")]
+visible = false
+position = Vector2(1450, -258)
