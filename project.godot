@@ -27,6 +27,10 @@ window/size/mode=2
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+gate=""
+
 [input]
 
 move_right={

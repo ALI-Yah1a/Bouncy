@@ -15,13 +15,16 @@ func _physics_process(delta):
 
 	if is_on_wall():
 		direction *= -1
+	if is_on_floor() and not ray_cast_2d.is_colliding():
+		direction *= -1
+	velocity.x = direction * speed	
 
 	if direction == 1:
 		animated_sprite_2d.flip_h = false
-		ray_cast_2d.position.x = -12
+		ray_cast_2d.position.x = 12
 	elif direction == -1:
 		animated_sprite_2d.flip_h = true
-		ray_cast_2d.position.x = 12
+		ray_cast_2d.position.x = -12
 	
 	velocity.x = speed * direction
 	move_and_slide()
