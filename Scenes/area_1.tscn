@@ -512,7 +512,6 @@ position = Vector2(1445, -73)
 [node name="EnergyCells30" parent="EnergyCells" unique_id=1654323813 instance=ExtResource("5_xdrte")]
 position = Vector2(1427.0001, -248)
 collision_layer = 1
-collision_mask = 2
 
 [node name="EnergyCells26" parent="EnergyCells" unique_id=245600251 instance=ExtResource("5_xdrte")]
 position = Vector2(1106, 37)

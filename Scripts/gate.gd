@@ -3,7 +3,20 @@ class_name Gate
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
+var is_open = false
 
+func _ready():
+	close()
+
+func open():
+	is_open = true
+	sprite_2d.region_rect.position.x = 22
+
+func close():
+	is_open = false
+	sprite_2d.region_rect.position.x = 0
+	
 func _on_body_entered(body):
-	if body is Player:
-		GameManager.next_level()
+	if is_open and body is Player:
+		if GameManager.current_area == 1:
+			GameManager.next_level()

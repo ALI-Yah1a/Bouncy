@@ -51,9 +51,3 @@ func die():
 	await get_tree().create_timer(0.6).timeout 
 	
 	get_tree().reload_current_scene()
-
-func _ready():
-	if GameManager.current_area == 1 and GameManager.is_returning:
-		var gate = get_parent().get_node_or_null("Gate")
-		if gate:
-			global_position = gate.global_position - Vector2(50, 0)
