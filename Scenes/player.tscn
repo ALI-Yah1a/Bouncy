@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4xc38w2x4lm3" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://d2twas6sbh6jg" path="res://Assets/Sprites/player.png" id="1_v0iea"]
+[ext_resource type="AudioStream" uid="uid://6vyk83owwhie" path="res://Assets/Sounds/jump.wav" id="3_6t5aa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
 atlas = ExtResource("1_v0iea")
@@ -122,9 +123,10 @@ radius = 5.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D" unique_id=645317530]
+z_index = 1
 scale = Vector2(1.3, 1.3)
-collision_layer = 3
-collision_mask = 771
+collision_layer = 7
+collision_mask = 775
 script = ExtResource("1_cvnsp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1371959313]
@@ -138,3 +140,7 @@ shape = SubResource("CapsuleShape2D_h4iuc")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=779083673]
 zoom = Vector2(4, 4)
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=230203674]
+stream = ExtResource("3_6t5aa")
+volume_db = -4.793

@@ -1,6 +1,7 @@
 extends CharacterBody2D
 class_name Player
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var jump_sound: AudioStreamPlayer2D = $JumpSound
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -350.0
@@ -22,8 +23,10 @@ func _physics_process(delta):
 		
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-	if velocity.y < 0.0:
-		animated_sprite_2d.play("jump")
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+		jump_sound.play()
+
 	elif velocity.y > 0.0:
 		animated_sprite_2d.play("fall")
 	
