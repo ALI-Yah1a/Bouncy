@@ -1,14 +1,21 @@
 [gd_scene format=3 uid="uid://bjmy2x3b5l6b3"]
 
 [ext_resource type="Texture2D" uid="uid://bmwcakyripy3v" path="res://Assets/energy_cell/energy_cell.png" id="1_0vv6o"]
+[ext_resource type="Script" uid="uid://xivbfsawaec5" path="res://Scripts/energy.gd" id="1_gr1ml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gr1ml"]
 size = Vector2(10, 12)
 
-[node name="Energy" type="Area2D" unique_id=1756328576]
+[node name="EnergyCell" type="Area2D" unique_id=1756328576]
+scale = Vector2(1.295, 1.295)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_gr1ml")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=332257025]
 texture = ExtResource("1_0vv6o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2076106493]
 shape = SubResource("RectangleShape2D_gr1ml")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

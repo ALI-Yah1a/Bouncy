@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bb8lyneqjpy8x" path="res://Scenes/player.tscn" id="2_jklmv"]
 [ext_resource type="PackedScene" uid="uid://c32n164bi50ai" path="res://Scenes/platform.tscn" id="3_jklmv"]
 [ext_resource type="PackedScene" uid="uid://jyjghxr5kxxi" path="res://Scenes/gate.tscn" id="4_pbtnt"]
+[ext_resource type="PackedScene" uid="uid://bjmy2x3b5l6b3" path="res://Scenes/energy.tscn" id="5_co5vv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgqqh"]
 texture = ExtResource("1_wp32v")
@@ -387,3 +388,128 @@ autoplay = &"moving"
 
 [node name="Gate" parent="." unique_id=1370895391 instance=ExtResource("4_pbtnt")]
 position = Vector2(-799, -664)
+
+[node name="EnergyCells" type="Node" parent="." unique_id=718218270]
+
+[node name="EnergyCell" parent="EnergyCells" unique_id=1756328576 instance=ExtResource("5_co5vv")]
+position = Vector2(-646, -679)
+
+[node name="EnergyCell2" parent="EnergyCells" unique_id=137658192 instance=ExtResource("5_co5vv")]
+position = Vector2(-598, -711)
+
+[node name="EnergyCell3" parent="EnergyCells" unique_id=1421850764 instance=ExtResource("5_co5vv")]
+position = Vector2(-520, -696)
+
+[node name="EnergyCell4" parent="EnergyCells" unique_id=1854104120 instance=ExtResource("5_co5vv")]
+position = Vector2(-478, -744.00006)
+
+[node name="EnergyCell5" parent="EnergyCells" unique_id=152552309 instance=ExtResource("5_co5vv")]
+position = Vector2(-520, -649)
+
+[node name="EnergyCell6" parent="EnergyCells" unique_id=1154509774 instance=ExtResource("5_co5vv")]
+position = Vector2(-432, -711)
+
+[node name="EnergyCell7" parent="EnergyCells" unique_id=1021742834 instance=ExtResource("5_co5vv")]
+position = Vector2(-246.00003, -712)
+
+[node name="EnergyCell8" parent="EnergyCells" unique_id=1446152205 instance=ExtResource("5_co5vv")]
+position = Vector2(-88.000015, -633.00006)
+
+[node name="EnergyCell9" parent="EnergyCells" unique_id=1874594615 instance=ExtResource("5_co5vv")]
+position = Vector2(44, -649)
+
+[node name="EnergyCell10" parent="EnergyCells" unique_id=962735428 instance=ExtResource("5_co5vv")]
+position = Vector2(321, -633)
+
+[node name="EnergyCell11" parent="EnergyCells" unique_id=706392193 instance=ExtResource("5_co5vv")]
+position = Vector2(631, -583.00006)
+
+[node name="EnergyCell12" parent="EnergyCells" unique_id=894477386 instance=ExtResource("5_co5vv")]
+position = Vector2(572.00006, -552)
+
+[node name="EnergyCell13" parent="EnergyCells" unique_id=1466160885 instance=ExtResource("5_co5vv")]
+position = Vector2(773, -472)
+
+[node name="EnergyCell14" parent="EnergyCells" unique_id=1336233627 instance=ExtResource("5_co5vv")]
+position = Vector2(874.00006, -343)
+
+[node name="EnergyCell15" parent="EnergyCells" unique_id=1419100273 instance=ExtResource("5_co5vv")]
+position = Vector2(1152, -392)
+
+[node name="EnergyCell16" parent="EnergyCells" unique_id=1929592350 instance=ExtResource("5_co5vv")]
+position = Vector2(1449, -72)
+
+[node name="EnergyCell17" parent="EnergyCells" unique_id=656208140 instance=ExtResource("5_co5vv")]
+position = Vector2(961, -24)
+
+[node name="EnergyCell18" parent="EnergyCells" unique_id=296224049 instance=ExtResource("5_co5vv")]
+position = Vector2(963, -72)
+
+[node name="EnergyCell19" parent="EnergyCells" unique_id=81555169 instance=ExtResource("5_co5vv")]
+position = Vector2(819.00006, 38)
+
+[node name="EnergyCell20" parent="EnergyCells" unique_id=447381269 instance=ExtResource("5_co5vv")]
+position = Vector2(855, -169)
+
+[node name="EnergyCell21" parent="EnergyCells" unique_id=483966112 instance=ExtResource("5_co5vv")]
+position = Vector2(705, -58)
+
+[node name="EnergyCell22" parent="EnergyCells" unique_id=2129926100 instance=ExtResource("5_co5vv")]
+position = Vector2(590, -9)
+
+[node name="EnergyCell23" parent="EnergyCells" unique_id=845343226 instance=ExtResource("5_co5vv")]
+position = Vector2(407, -10)
+
+[node name="EnergyCell24" parent="EnergyCells" unique_id=1909573952 instance=ExtResource("5_co5vv")]
+position = Vector2(409, -105)
+
+[node name="EnergyCell25" parent="EnergyCells" unique_id=895123366 instance=ExtResource("5_co5vv")]
+position = Vector2(410.00003, -152)
+
+[node name="EnergyCell26" parent="EnergyCells" unique_id=233517963 instance=ExtResource("5_co5vv")]
+position = Vector2(418, -269)
+
+[node name="EnergyCell27" parent="EnergyCells" unique_id=2130875178 instance=ExtResource("5_co5vv")]
+position = Vector2(245, -200.00002)
+
+[node name="EnergyCell28" parent="EnergyCells" unique_id=1483441115 instance=ExtResource("5_co5vv")]
+position = Vector2(142, -76)
+
+[node name="EnergyCell29" parent="EnergyCells" unique_id=1307808793 instance=ExtResource("5_co5vv")]
+position = Vector2(297, -11)
+
+[node name="EnergyCell30" parent="EnergyCells" unique_id=1868815867 instance=ExtResource("5_co5vv")]
+position = Vector2(218, -11)
+
+[node name="EnergyCell33" parent="EnergyCells" unique_id=136112462 instance=ExtResource("5_co5vv")]
+position = Vector2(-320, -43)
+
+[node name="EnergyCell34" parent="EnergyCells" unique_id=1385289187 instance=ExtResource("5_co5vv")]
+position = Vector2(-371, -250)
+
+[node name="EnergyCell35" parent="EnergyCells" unique_id=163437570 instance=ExtResource("5_co5vv")]
+position = Vector2(-403.00003, -281)
+
+[node name="EnergyCell36" parent="EnergyCells" unique_id=713346943 instance=ExtResource("5_co5vv")]
+position = Vector2(-503, -281)
+
+[node name="EnergyCell40" parent="EnergyCells" unique_id=202983279 instance=ExtResource("5_co5vv")]
+position = Vector2(-529, -281)
+
+[node name="EnergyCell41" parent="EnergyCells" unique_id=833256960 instance=ExtResource("5_co5vv")]
+position = Vector2(-328, -442)
+
+[node name="EnergyCell37" parent="EnergyCells" unique_id=415530493 instance=ExtResource("5_co5vv")]
+position = Vector2(-481.00003, -281)
+
+[node name="EnergyCell38" parent="EnergyCells" unique_id=454352100 instance=ExtResource("5_co5vv")]
+position = Vector2(-455.00003, -281)
+
+[node name="EnergyCell39" parent="EnergyCells" unique_id=521806613 instance=ExtResource("5_co5vv")]
+position = Vector2(-430.00003, -281)
+
+[node name="EnergyCell31" parent="EnergyCells" unique_id=65760258 instance=ExtResource("5_co5vv")]
+position = Vector2(244, -11)
+
+[node name="EnergyCell32" parent="EnergyCells" unique_id=1034684243 instance=ExtResource("5_co5vv")]
+position = Vector2(270, -11)
