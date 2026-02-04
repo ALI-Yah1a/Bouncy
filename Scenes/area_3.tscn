@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://jyjghxr5kxxi" path="res://Scenes/gate.tscn" id="4_pbtnt"]
 [ext_resource type="Script" uid="uid://bqxcs5poulwoq" path="res://Scripts/trophy.gd" id="5_02co5"]
 [ext_resource type="Texture2D" uid="uid://bq1kqdawgj3a" path="res://Assets/Trophy/End (Pressed) (64x64).png" id="5_ql5fl"]
+[ext_resource type="FontFile" uid="uid://cboapoje3hcce" path="res://Assets/Fonts/Kenney Future.ttf" id="7_rjq4t"]
+[ext_resource type="FontFile" uid="uid://b0fmtp3xi1nub" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="8_gou3o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgqqh"]
 texture = ExtResource("1_wp32v")
@@ -456,5 +458,25 @@ shape = SubResource("RectangleShape2D_to40t")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trophy/Area2D" unique_id=1970421006]
 position = Vector2(2, -18)
 shape = SubResource("RectangleShape2D_grujb")
+
+[node name="Label" type="Label" parent="." unique_id=1963889129]
+offset_left = -571.0
+offset_top = -932.0
+offset_right = -274.0
+offset_bottom = -882.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_rjq4t")
+theme_override_font_sizes/font_size = 44
+text = "You Did It!"
+
+[node name="Label2" type="Label" parent="." unique_id=807978035]
+offset_left = -722.0
+offset_top = -699.0
+offset_right = -425.0
+offset_bottom = -649.0
+theme_override_colors/font_color = Color(0.2382622, 0.2382622, 0.23826218, 1)
+theme_override_fonts/font = ExtResource("8_gou3o")
+theme_override_font_sizes/font_size = 19
+text = "Jump on The Trophy"
 
 [connection signal="body_entered" from="Trophy/Area2D" to="Trophy" method="_on_area_2d_body_entered"]

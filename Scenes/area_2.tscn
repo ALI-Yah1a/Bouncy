@@ -417,7 +417,7 @@ autoplay = &"moving"
 position = Vector2(-799, -664)
 
 [node name="Gate2" parent="." unique_id=1760487770 groups=["gate"] instance=ExtResource("4_pbtnt")]
-position = Vector2(1456, 24)
+position = Vector2(1421, 23)
 
 [node name="EnergyCells" type="Node" parent="." unique_id=718218270]
 
